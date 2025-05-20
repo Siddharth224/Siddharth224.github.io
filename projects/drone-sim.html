@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Drone Simulation | My Website</title>
+    <title>Drone Simulation | Siddharth Projects</title>
     <link rel="stylesheet" href="../style.css">
     <style>
         body {
@@ -11,15 +11,13 @@
             margin: auto;
         }
         .image-row {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
             gap: 1rem;
             margin-bottom: 2rem;
         }
         .image-row img {
             width: 100%;
-            max-width: 290px;
             aspect-ratio: 1 / 1;
             object-fit: cover;
             border-radius: 8px;
@@ -40,6 +38,16 @@
         .report-link:hover {
             text-decoration: underline;
         }
+        @media (max-width: 768px) {
+            .image-row {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 500px) {
+            .image-row {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
 </head>
 <body>
@@ -50,7 +58,7 @@
     </nav>
 
     <header class="project-header">
-        <h1>Project Title</h1>
+        <h1>Drone Simulation</h1>
     </header>
 
     <div class="image-row">

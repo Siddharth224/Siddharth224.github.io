@@ -4,21 +4,112 @@
     <meta charset="UTF-8">
     <title>Projects | My Website</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+        }
+        .project-card {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.2s;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+        .project-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        .project-card-content {
+            padding: 1rem;
+        }
+        .project-card h3 {
+            margin-top: 0;
+            font-size: 1.25rem;
+        }
+        .project-card p {
+            margin-bottom: 0;
+            font-size: 0.95rem;
+        }
+        nav {
+            background-color: #fff;
+            padding: 1rem;
+            border-bottom: 1px solid #ddd;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: bold;
+            color: #333;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
+    <nav>
+        <a href="index.html">home</a>
+        <a href="projects.html">projects</a>
+        <a href="contact.html">contact</a>
+    </nav>
+
     <header class="minimal-header">
         <h1 class="centered-title">projects</h1>
     </header>
 
-    <main class="project-list">
-        <ul>
-            <li><a href="projects/quadcopter.html">quadcopter frame</a></li>
-            <li><a href="projects/drone-sim.html">drone simulation with CARLA</a></li>
-            <li><a href="projects/occlusion.html">occluded perception with ROS2</a></li>
-            <li><a href="projects/game-engine.html">2D pixel game engine</a></li>
-            <li><a href="projects/mems-sensor.html">MEMS IMU data logger</a></li>
-            <li><a href="projects/thermal-analysis.html">thermal analysis of composite structures</a></li>
-        </ul>
-    </main>
+    <div class="card-grid">
+        <a href="projects/quadcopter.html" class="project-card">
+            <img src="assets/projects/quadcopter-1.jpg" alt="Quadcopter Frame">
+            <div class="project-card-content">
+                <h3>Quadcopter Frame</h3>
+                <p>Lightweight carbon fiber frame for hybrid VTOL drone.</p>
+            </div>
+        </a>
+        <a href="projects/drone-sim.html" class="project-card">
+            <img src="assets/projects/drone-1.jpg" alt="Drone Simulation">
+            <div class="project-card-content">
+                <h3>Drone Simulation with CARLA</h3>
+                <p>Simulated urban flight environments to support autonomy research.</p>
+            </div>
+        </a>
+        <a href="projects/occlusion.html" class="project-card">
+            <img src="assets/projects/occlusion-1.jpg" alt="Occluded Perception">
+            <div class="project-card-content">
+                <h3>Occluded Perception with ROS2</h3>
+                <p>Robust object detection under partial occlusion in simulated environments.</p>
+            </div>
+        </a>
+        <a href="projects/game-engine.html" class="project-card">
+            <img src="assets/projects/game-1.jpg" alt="Game Engine">
+            <div class="project-card-content">
+                <h3>2D Pixel Game Engine</h3>
+                <p>Tile-based game engine with sprite animation and collision handling.</p>
+            </div>
+        </a>
+        <a href="projects/mems-sensor.html" class="project-card">
+            <img src="assets/projects/mems-1.jpg" alt="MEMS IMU Logger">
+            <div class="project-card-content">
+                <h3>MEMS IMU Data Logger</h3>
+                <p>Custom board for recording and analyzing high-frequency motion data.</p>
+            </div>
+        </a>
+        <a href="projects/thermal-analysis.html" class="project-card">
+            <img src="assets/projects/thermal-1.jpg" alt="Thermal Analysis">
+            <div class="project-card-content">
+                <h3>Thermal Analysis of Composites</h3>
+                <p>FEA modeling of heat flow in multilayer carbon fiber laminates.</p>
+            </div>
+        </a>
+    </div>
 </body>
 </html>

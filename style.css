@@ -1,0 +1,11 @@
+body { font-family: Georgia, serif; background: #fff; color: #222; margin: 0; padding: 0 1rem; line-height: 1.6; }
+nav { text-align: center; margin-top: 2rem; }
+nav a { margin: 0 1rem; text-decoration: none; color: #333; font-weight: bold; }
+.welcome, .centered-title { text-align: center; margin-top: 4rem; font-size: 2rem; font-weight: bold; }
+.project-list ul { list-style: none; padding: 0; text-align: center; }
+.project-list li { margin: 1rem 0; }
+.project-header h1 { font-size: 1.8rem; text-align: center; margin-top: 2rem; }
+.project-body { max-width: 700px; margin: 2rem auto; padding: 0 1rem; }
+.project-body ul { list-style-type: disc; margin-left: 2rem; }
+.project-body img { max-width: 100%; margin-top: 1rem; border: 1px solid #ccc; }
+.back-link { text-align: center; margin: 2rem 0; }

@@ -1,1 +1,78 @@
-<html><head><title>Placeholder</title></head><body><p>Placeholder content for projects/tennis.html</p></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tennis | Siddharth Projects</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        body {
+            padding: 2rem;
+            max-width: 900px;
+            margin: auto;
+        }
+        .image-row {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        .image-row img {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .project-text {
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+        .report-link {
+            display: inline-block;
+            margin-top: 1rem;
+            font-weight: bold;
+            color: #0056b3;
+            text-decoration: none;
+        }
+        .report-link:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            .image-row {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 500px) {
+            .image-row {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="../projects.html">Projects</a>
+        <a href="../contact.html">Contact</a>
+    </nav>
+
+    <header class="project-header">
+        <h1>2 Player Tennis FPGA Game</h1>
+    </header>
+
+    <div class="image-row">
+        <img src="../assets/projects/tennis-1.jpg" alt="Project image 1">
+        <img src="../assets/projects/tennis-2.jpg" alt="Project image 2">
+        <img src="../assets/projects/tennis-3.jpg" alt="Project image 3">
+    </div>
+
+    <div class="project-text">
+        <p>This is a 2-player tennis game, Tennis Smash, that is implemented on our Spartan-7 FPGA Urbana board. The project features real-time gameplay that is controlled through the keyboard, where each player uses the WASD and arrow keys for movements, and the G and J keys for respective swinging to hit the tennis ball. The overall system is capable of tracking both players' positions and the dynamics of the tennis ball. The XYZ components are used to simulate realistic ball deflection and bouncing behavior. The game concludes when one player has reached 10 points, and is capable of being replayed. The system features sprite animations, a starting title screen, and the restart functionality once the game has been won by one of the players. </p>
+        <p>Future work on this project would be implementing audio, in which we would utilize the audio port on the FPGA to be connected to either a speaker or headphones to play audio during gameplay. To achieve audio output, we were planning on utilizing a Pulse Width Modulation signal in which an 8-bit audio sample is read from HEX characters in an external file. Below, you can find a report as well as a video of the working project. Acknowledgements: I worked on this project with another student at UIUC.</p>
+    </div>
+
+    <a class="report-link" href="https://evconcept.engr.illinois.edu/" target="_blank">Read Full Report (PDF)</a>
+    <a class="report-link" href="https://youtu.be/Bs7se37LZMs" target="_blank">Demo Video</a>
+</body>
+</html>

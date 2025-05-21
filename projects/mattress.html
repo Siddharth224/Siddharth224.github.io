@@ -1,1 +1,119 @@
-<html><head><title>Placeholder</title></head><body><p>Placeholder content for projects/mattress.html</p></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Intelligent Mattress | Siddharth Projects</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        body {
+            padding: 2rem;
+            max-width: 900px;
+            margin: auto;
+        }
+        .non-square-image-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+
+        .non-square-image-row img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .image-row {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        .image-row img {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .project-text {
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+        .report-link {
+            display: inline-block;
+            margin-top: 1rem;
+            font-weight: bold;
+            color: #0056b3;
+            text-decoration: none;
+        }
+        .report-link:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            .image-row {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 500px) {
+            .image-row {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="../projects.html">Projects</a>
+        <a href="../contact.html">Contact</a>
+    </nav>
+
+    <header class="project-header">
+        <h1>Intelligent Mattress Topper</h1>
+    </header>
+
+    <div class="image-row">
+        <img src="../assets/projects/mattress-1.jpg" alt="Project image 1">
+        <img src="../assets/projects/mattress-2.jpg" alt="Project image 2">
+        <img src="../assets/projects/mattress-3.jpg" alt="Project image 3">
+    </div>
+
+    <div class="project-text">
+        <header class="project-header">
+            <h2>Introduction</h2>
+        </header>
+        <p>Pressure injuries impact over 2.5million patients each year in the US, contributing to 9-11 billion in helathcare costs. These injuries are linked to extended hospital stays, increased risk of serious complications, and significantly higher care costs - averaging over $43000 per patient. They also raise nursing workload by almost 50%, adding strain to already understaffed care settings.</p>
+        <p>Despite existing prevention strategies—such as manual repositioning, alert systems, and alternating pressure mattresses—compliance remains low and performance inconsistent, particularly in long-term care facilities facing staffing shortages. Many current technologies are limited by discomfort, delayed responsiveness, and high maintenance needs.</p>
+        <header class="project-header">
+            <h2>Aim</h2>
+        </header>
+        <p>To address these gaps, we developed a flexible, sensor-embedded textile that continuously monitors pressure in real time. Paired with a software platform, the system delivers actionable, patient-specific insights to support timely, targeted interventions. This approach aims to enhance pressure injury prevention, reduce healthcare costs, and improve caregiver efficiency, while paving the way for future automated solutions.</p>
+        <header class="project-header">
+            <h2>Methods</h2>
+        </header>
+        <p>The system integrates a flexible, sensor-embedded textile mat with an Arduino microcontroller to monitor real-time pressure and temperature data. Pressure and temperature sensors are embedded in medical-grade foam for comfort and durability. A multiplexer and analog-to-digital converter process multiple sensor inputs, which are visualized through a color-coded pressure map. While intervention features were initially planned, this phase focuses on accurate risk detection to support future automated solutions.</p>
+        <header class="project-header">
+            <h2>Conclusion</h2>
+        </header>
+        <p>We developed a pressure-sensing mattress topper capable of real-time detection and quantification of pressure distribution. This system allows for continuous monitoring during patient rest—an important factor in pressure injury prevention that is often difficult to measure. The accompanying software converts sensor data into visual pressure maps, helping caregivers quickly identify high-risk areas and monitor trends more accurately than current commercial solutions.</p>
+        <p>While automated intervention was an initial goal, this project focused on building a reliable foundation. By quantifying pressure exposure effectively, the system is ready for future integration with adaptive pressure relief features. Unlike existing tools, our platform provides real-time, actionable insights that can reduce manual repositioning, improve prevention efforts, and ease the burden on healthcare staff.</p>
+        <header class="project-header">
+            <h2>Future Direction</h2>
+        </header>
+        <p>Building on the current system, future work will focus on refining pressure injury risk thresholds through empirical testing to better understand pressure-time injury relationships. These findings will support the creation of a second-generation prototype that integrates real-time, automated pressure redistribution to prevent tissue damage before it occurs. Additional goals include improving sensor sensitivity, enhancing durability, and reducing power consumption. We also aim to implement wireless connectivity and cloud-based data analytics to enable remote monitoring and integration with clinical workflows. To allow for scalability, we plan to design a custom PCB for connectivity and easy functionality of the mattress, minimizing maintenance for the end user. These advancements will move the system toward a fully automated, scalable solution for smarter and more efficient pressure injury prevention.</p>
+        <header class="project-header">
+            <h2>Acknowledgements & Other Notes</h2>
+        </header>
+        <p>I was the project co-lead in the academic year 2024-2025, where we won 2nd place in Most Industry Impact @ Engineering Open House (Award presented by Chevron). This project was worked on by several other students at UIUC, and was sponsored through medical students at the Carle College of Medicine. Future involvement includes me being the Director of Product Development at ASME at Illinois.</p>
+    </div>
+    <div class="non-square-image-row">
+        <img src="../assets/projects/mattress-4.jpg" alt="Extra image 1">
+        <img src="../assets/projects/mattress-5.jpg" alt="Extra image 2">
+    </div>
+    
+</body>
+</html>

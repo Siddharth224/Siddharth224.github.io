@@ -1,1 +1,77 @@
-<html><head><title>Placeholder</title></head><body><p>Placeholder content for projects/railbot.html</p></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Railbot | Siddharth Projects</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        body {
+            padding: 2rem;
+            max-width: 900px;
+            margin: auto;
+        }
+        .image-row {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        .image-row img {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .project-text {
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+        .report-link {
+            display: inline-block;
+            margin-top: 1rem;
+            font-weight: bold;
+            color: #0056b3;
+            text-decoration: none;
+        }
+        .report-link:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            .image-row {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 500px) {
+            .image-row {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="../projects.html">Projects</a>
+        <a href="../contact.html">Contact</a>
+    </nav>
+
+    <header class="project-header">
+        <h1>Railbot</h1>
+    </header>
+
+    <div class="image-row">
+        <img src="../assets/projects/railbot-1.jpg" alt="Project image 1">
+        <img src="../assets/projects/railbot-2.jpg" alt="Project image 2">
+        <img src="../assets/projects/railbot-3.jpg" alt="Project image 3">
+    </div>
+
+    <div class="project-text">
+        <p>In my first year at ASME at Illinois, I joined the Product Development Subteam to work on the railbot. The railbot is a user-friendly way for elderly people to carry items upstairs. You simply put it on your railing, put whatever bags you want on the hook, and it carries the items up. Here, I was mainly part of the electrical/coding subteam where I worked on the rechargability and coding of our robot.</p>
+        <p>One of my main projects involved working on the recharging of the robot. This involved me researching and finding charging components for the battery. After this step I focused on soldering of the components and finally the testing phase. During the testing phase, we faced many issues with the actual charging mechanism not working. After extensive research, this was revealed to be an issue with not having a large initial voltage to "jumpstart" the charging circuitry.</p>
+        <p>Other than this main project, I contributed to the project in a few other ways. Firstly, I assisted with writing the C code so that we can have smooth acceleration and deceleration logic when starting up and approaching the end of the railing. Additionally, an issue we faced was the robot slipping on the railing due to not enough friction. To counteract this, we implemented silicone wheels. To assist with this I designed a mold frame using Fusion 360 so we could set the silicone, and this helped prevent slipping almost completely.</p>
+    </div>
+
+</body>
+</html>

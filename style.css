@@ -5,6 +5,7 @@ nav a { margin: 0 1rem; text-decoration: none; color: #333; font-weight: bold; }
 .project-list ul { list-style: none; padding: 0; text-align: center; }
 .project-list li { margin: 1rem 0; }
 .project-header h1 { font-size: 1.8rem; text-align: center; margin-top: 2rem; }
+.project-header h2 { font-size: 1.2rem; margin-top: 1.5rem; }
 .project-body { max-width: 700px; margin: 2rem auto; padding: 0 1rem; }
 .project-body ul { list-style-type: disc; margin-left: 2rem; }
 .project-body img { max-width: 100%; margin-top: 1rem; border: 1px solid #ccc; }

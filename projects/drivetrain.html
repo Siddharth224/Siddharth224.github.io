@@ -1,1 +1,79 @@
-<html><head><title>Placeholder</title></head><body><p>Placeholder content for projects/drivetrain.html</p></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Drivetrain | Siddharth Projects</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        body {
+            padding: 2rem;
+            max-width: 900px;
+            margin: auto;
+        }
+        .image-row {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        .image-row img {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .project-text {
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+        .report-link {
+            display: inline-block;
+            margin-top: 1rem;
+            font-weight: bold;
+            color: #0056b3;
+            text-decoration: none;
+        }
+        .report-link:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            .image-row {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 500px) {
+            .image-row {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="../projects.html">Projects</a>
+        <a href="../contact.html">Contact</a>
+    </nav>
+
+    <header class="project-header">
+        <h1>Drivetrain</h1>
+    </header>
+
+    <div class="image-row">
+        <img src="../assets/projects/drivetrain-1.jpg" alt="Project image 1">
+        <img src="../assets/projects/drivetrain-2.jpg" alt="Project image 2">
+        <img src="../assets/projects/drivetrain-3.jpg" alt="Project image 3">
+    </div>
+
+    <div class="project-text">
+        <p>Over the past few years, I have been involved in UIUC's EV Concept team, where we build a concept car for the Shell Eco-Marathon. I started off as a member of the drivetrain subteam and was previously the EV2 Upkeep & Upgrading lead. I currently hold the position of the drivetrain lead.</p>
+        <p>In the drivetrain subteam, we focus on designing an efficient drivetrain for the 3rd generation car. This involves selecting various parts such as the differential and motor, and working hand-in-hand with other mechanical and electrical subteams. After selecting the main components, one of the main projects I have been working on as the lead is designing a 16:1 gearbox that can allow us to operate the motor at the most efficient RPM with achieving the goal speed of the car, which wil allow us to attain the high efficieny needed to succeed in the competition. When designing this, one of the main constraints I am currently facing is making it lightweight to not cause too much structural load on the carbon fiber monocoque. This process also involves deciding mounting points and the correct sprocket choices as to allow for smooth transition without too much fricitonal or other losses. You can see parts of the design above.</p>
+        <p>Previously, as a member I mainly focused on the motor choice and curves regarding this. Emphasizing on this, we are building a jig and looking into a dyno to identify load on the motor and design an optimal drivetrain. The goal of this is to make it modular so we can continuously improve our design without waiting for the whole car to be built and testing on that. An additional previous project I took on as the EV2 Upkeep & Upgrading Lead involved me designing a seatbelt mechanism for the drivers, such that it is adjustable based on the height of every driver and fit competitions constraints. A report of my previous work outside of being the drivetrain lead can be found below. I have also included a link to the official EV Concept at Illinois website.</p>
+    </div>
+
+    <a class="report-link" href="https://evconcept.engr.illinois.edu/" target="_blank">EV Concept at Illinois</a>
+    <a class="report-link" href="../assets/projects/EV_Concept_Report.pdf" target="_blank">Previous Work Report (PDF)</a>
+</body>
+</html>

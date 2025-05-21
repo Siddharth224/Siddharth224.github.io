@@ -1,1 +1,79 @@
-<html><head><title>Placeholder</title></head><body><p>Placeholder content for projects/quadcopter.html</p></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quadcopter | Siddharth Projects</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        body {
+            padding: 2rem;
+            max-width: 900px;
+            margin: auto;
+        }
+        .image-row {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        .image-row img {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .project-text {
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+        .report-link {
+            display: inline-block;
+            margin-top: 1rem;
+            font-weight: bold;
+            color: #0056b3;
+            text-decoration: none;
+        }
+        .report-link:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            .image-row {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 500px) {
+            .image-row {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="../projects.html">Projects</a>
+        <a href="../contact.html">Contact</a>
+    </nav>
+
+    <header class="project-header">
+        <h1>Quadcopter</h1>
+    </header>
+
+    <div class="image-row">
+        <img src="../assets/projects/quadcopter-2.jpg" alt="Project image 1">
+        <img src="../assets/projects/quadcopter-3.jpg" alt="Project image 2">
+        <img src="../assets/projects/quadcopter-4.jpg" alt="Project image 3">
+    </div>
+
+    <div class="project-text">
+        <p>This project focused on designing a quadcopter frame. The idea was to make something that could commercially be produced from scratch and is safe for users, so no wires should be exposed like traditional quadcopters for hobbyists. This process included research electronics, designing the frame, iterating on this design, and designing the propellers.</p>
+        <p>When selecting electronics, I went for a traditional electronics that fit a general FPV drone. I also went for a design that attained a lengthy battery life for extensive flight. After doing this, I was able to design a frame around this. After this, I identified potential week points, conducted FEA on them to verify my concerns, and fixed them accordingly.</p>
+        <p>The final design step included making the propellers. This required extensive research followed by CFD work to verify my design. At the end, I achieved a theoretical 2:1 thrust ratio. After this, I 3D printed the drone as a final result and identified issues with it that could be fixed for further improvement and industry use.</p>
+        <p>Finally, for real industry usage, there are 2 main steps. First is the engineering drawings as well as the actual method. Once engineering drawings are made to communicate design constraints and intent, I can theoretically mass produce this using injection molding, so this involves making sure my drone is designed in such a way that this is possible & cheap. A full, detailed report of this self-motivated project can be found below.</p>
+    </div>
+
+    <a class="report-link" href="../assets/projects/Drone_Project_Documentation.pdf" target="_blank">Read Full Report (PDF)</a>
+</body>
+</html>

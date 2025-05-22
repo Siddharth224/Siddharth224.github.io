@@ -10,3 +10,46 @@ nav a { margin: 0 1rem; text-decoration: none; color: #333; font-weight: bold; }
 .project-body ul { list-style-type: disc; margin-left: 2rem; }
 .project-body img { max-width: 100%; margin-top: 1rem; border: 1px solid #ccc; }
 .back-link { text-align: center; margin: 2rem 0; }
+.contact-info {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.contact-info h1 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.contact-info ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.contact-info li {
+    margin-bottom: 0.5rem;
+}
+
+.contact-info a {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+.welcome {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 4rem;
+    font-family: monospace;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid black;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}

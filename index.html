@@ -12,6 +12,25 @@
         <a href="contact.html">Contact</a>
     </nav>
 
-    <div class="welcome">Welcome to my website</div>
+    <div class="welcome">
+        <span id="typing-text"></span>
+    </div>
+    
+    <script>
+        const text = "Welcome to my website";
+        let index = 0;
+    
+        function typeText() {
+            if (index < text.length) {
+                document.getElementById("typing-text").textContent += text.charAt(index);
+                index++;
+                setTimeout(typeText, 100);
+            }
+        }
+    
+        window.onload = typeText;
+    </script>
+    
 </body>
 </html>
+
